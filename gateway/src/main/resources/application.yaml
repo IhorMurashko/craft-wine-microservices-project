@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: user
+#          uri: lb://user
+#          predicates:
+#            - Path=/api/v1/user/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
