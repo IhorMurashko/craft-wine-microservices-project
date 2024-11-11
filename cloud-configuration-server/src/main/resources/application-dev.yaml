@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+
+
+spring:
+  application:
+    name: loud-configuration-server
+  config:
+    import: "file:/home/developer/my folder/git/git-credentials.properties"
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/IhorMurashko/craft-wine-cloud-git-config.git
+          username: ${git.username}
+          password: ${git.password}
+          default-label: main
+          search-paths: "{application}"
