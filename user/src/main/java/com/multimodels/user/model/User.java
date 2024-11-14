@@ -23,5 +23,12 @@ public class User extends AbstractUser {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = true)
+    private String firstName;
+    @Column(nullable = true)
+    private String lastName;
+
+    @Column(nullable = true)
+    private String phoneNumber;
 
 }
